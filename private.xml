@@ -1,207 +1,356 @@
 <?xml version="1.0"?>
 <root>
- <appdef>
-    <appname>CHROME</appname>
-    <equal>com.google.Chrome</equal>
-  </appdef>
+	<appdef>
+		<appname>CHROME</appname>
+		<equal>com.google.Chrome</equal>
+	</appdef>
 
- <list>
- <item>
-        <name>Command + n -> Fn</name>        
-        <identifier>private.commnad_n_fn</identifier>
-        <autogen>
-         --KeyToKey--
-         KeyCode::KEY_1, ModifierFlag::COMMAND_L,
-         KeyCode::F1
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_1, ModifierFlag::COMMAND_R,
-         KeyCode::F1
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_2, ModifierFlag::COMMAND_L,
-         KeyCode::F2
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_2, ModifierFlag::COMMAND_R,
-         KeyCode::F2
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_3, ModifierFlag::COMMAND_L,
-         KeyCode::F3
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_3, ModifierFlag::COMMAND_R,
-         KeyCode::F3
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_4, ModifierFlag::COMMAND_L,
-         KeyCode::F4
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_4, ModifierFlag::COMMAND_R,
-         KeyCode::F4
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_5, ModifierFlag::COMMAND_L,
-         KeyCode::F5
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_5, ModifierFlag::COMMAND_R,
-         KeyCode::F5
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_6, ModifierFlag::COMMAND_L,
-         KeyCode::F6
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_6, ModifierFlag::COMMAND_R,
-         KeyCode::F6
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_7, ModifierFlag::COMMAND_L,
-         KeyCode::F7
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_7, ModifierFlag::COMMAND_R,
-         KeyCode::F7
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_8, ModifierFlag::COMMAND_L,
-         KeyCode::F8
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_8, ModifierFlag::COMMAND_R,
-         KeyCode::F8
-         </autogen>
-        <autogen>
-         --KeyToKey--
-         KeyCode::KEY_9, ModifierFlag::COMMAND_L,
-         KeyCode::F9
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_9, ModifierFlag::COMMAND_R,
-         KeyCode::F9
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_9, ModifierFlag::COMMAND_L,
-         KeyCode::F9
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_9, ModifierFlag::COMMAND_R,
-         KeyCode::F9
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_0, ModifierFlag::COMMAND_L,
-         KeyCode::F10
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::KEY_0, ModifierFlag::COMMAND_R,
-         KeyCode::F10
-         </autogen>
-         
-   </item>
-<item>
-    <name>Command Arrow</name>     
-    <identifier>remap.command_arrow</identifier>
-     <autogen>
-         --KeyToKey--
-         KeyCode::K, ModifierFlag::CONTROL_L,
-         KeyCode::CURSOR_UP
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::J, ModifierFlag::CONTROL_L,
-         KeyCode::CURSOR_DOWN
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::H, ModifierFlag::CONTROL_L,
-         KeyCode::CURSOR_LEFT
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::L, ModifierFlag::CONTROL_L,
-         KeyCode::CURSOR_RIGHT
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::C, ModifierFlag::CONTROL_L,
-         KeyCode::L, ModifierFlag::CONTROL_L,
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::K, ModifierFlag::CONTROL_L,
-         KeyCode::X, ModifierFlag::CONTROL_L,
-         </autogen>
-         <autogen>
-         --KeyToKey--
-         KeyCode::SEMICOLON, ModifierFlag::CONTROL_L,
-         KeyCode::DELETE
-         </autogen>
-    </item>
-    
-    <item>
-     <name>Chrome</name>
-     <only>CHROME</only>
-     <identifier>remap.Chrome</identifier>
-     <autogen>
-         --KeyToKey--
-         KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
-         KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
-      </autogen>
-      <autogen>
-         --KeyToKey--
-         KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L, 
-         KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
-      </autogen>  
-      <autogen>
-         --KeyToKey--
-         KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_R, 
-         KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
-      </autogen>    
-    </item>
+	<appdef>
+		<appname>UNITY</appname>
+		<equal>com.unity3d.UnityEditor5.x</equal>
+	</appdef>
 
- <item>
-       <only>TERMINAL</only>
-        <name>Leave Insert Mode with EISUU (vim keybind apps)</name>        
-        <identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
-        <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
-        <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
-        <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
-        <autogen>--KeyToKey-- KeyCode::S, VK_COMMAND, KeyCode::S, VK_COMMAND, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
-   </item>
-   <item>
-    <name>Command_L to Control_L (TERMINAL ONLY)</name>
-     <only>TERMINAL</only>
-     <identifier>remap.app_term_commandL2controlL2</identifier>
-     <autogen>--KeyToKey-- KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
-    </item>
-    <item>
-     <name>Control_L to Command_L (TERMINAL ONLY)</name>
-     <only>TERMINAL</only>
-     <identifier>remap.app_term_contolL2commandL2</identifier>
-     <autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>        
-    </item>
-   </list>
+	<list>
+		<item>
+			<name>Command + n -> Fn</name>				
+			<identifier>private.commnad_n_fn</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_1, ModifierFlag::COMMAND_L,
+				KeyCode::F1
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_1, ModifierFlag::COMMAND_R,
+				KeyCode::F1
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_2, ModifierFlag::COMMAND_L,
+				KeyCode::F2
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_2, ModifierFlag::COMMAND_R,
+				KeyCode::F2
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_3, ModifierFlag::COMMAND_L,
+				KeyCode::F3
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_3, ModifierFlag::COMMAND_R,
+				KeyCode::F3
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_4, ModifierFlag::COMMAND_L,
+				KeyCode::F4
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_4, ModifierFlag::COMMAND_R,
+				KeyCode::F4
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_5, ModifierFlag::COMMAND_L,
+				KeyCode::F5
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_5, ModifierFlag::COMMAND_R,
+				KeyCode::F5
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_6, ModifierFlag::COMMAND_L,
+				KeyCode::F6
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_6, ModifierFlag::COMMAND_R,
+				KeyCode::F6
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_7, ModifierFlag::COMMAND_L,
+				KeyCode::F7
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_7, ModifierFlag::COMMAND_R,
+				KeyCode::F7
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_8, ModifierFlag::COMMAND_L,
+				KeyCode::F8
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_8, ModifierFlag::COMMAND_R,
+				KeyCode::F8
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::COMMAND_L,
+				KeyCode::F9
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::COMMAND_R,
+				KeyCode::F9
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::COMMAND_L,
+				KeyCode::F9
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::COMMAND_R,
+				KeyCode::F9
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_0, ModifierFlag::COMMAND_L,
+				KeyCode::F10
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_0, ModifierFlag::COMMAND_R,
+				KeyCode::F10
+			</autogen>
+		</item>
+
+		<item>
+			<name>Command Arrow</name>		 
+			<identifier>remap.command_arrow</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::K, ModifierFlag::CONTROL_L,
+				KeyCode::CURSOR_UP
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::J, ModifierFlag::CONTROL_L,
+				KeyCode::CURSOR_DOWN
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::H, ModifierFlag::CONTROL_L,
+				KeyCode::CURSOR_LEFT
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::L, ModifierFlag::CONTROL_L,
+				KeyCode::CURSOR_RIGHT
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::C, ModifierFlag::CONTROL_L,
+				KeyCode::L, ModifierFlag::CONTROL_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::K, ModifierFlag::CONTROL_L,
+				KeyCode::X, ModifierFlag::CONTROL_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::SEMICOLON, ModifierFlag::CONTROL_L,
+				KeyCode::DELETE
+			</autogen>
+		</item>
+
+		<item>
+			<name>Holding Application Key to Toggle Mouse Keys Mode</name>
+			<identifier>private.ak_to_rc</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::PC_APPLICATION,
+				ModifierFlag::COMMAND_R
+			</autogen>
+			<autogen>
+				__HoldingKeyToKey__
+				KeyCode::PC_APPLICATION, ModifierFlag::NONE,
+				KeyCode::PC_APPLICATION, KeyCode::VK_NONE, KeyCode::VK_CONFIG_TOGGLE_notsave_mousekeys_mode
+			</autogen>
+		</item>
+		
+		<item>
+			<name>Holding Function Key to Toggle Mouse Keys Mode</name>
+			<identifier>private.fn_to_rc</identifier>
+			<autogen>
+				__HoldingKeyToKey__
+				ModifierFlag::FN, ModifierFlag::NONE,
+				KeyCode::FN, KeyCode::VK_NONE, KeyCode::VK_CONFIG_TOGGLE_notsave_mousekeys_mode
+			</autogen>
+		</item>
+
+		<item>
+			<name>Chrome</name>
+			<only>CHROME</only>
+			<identifier>remap.Chrome</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::NONE,
+				KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L, 
+				KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+			</autogen>	
+			<autogen>
+				--KeyToKey--
+				KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_R, 
+				KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L,
+			</autogen>		
+		</item>
+
+		<item>
+			<name>Unity</name>
+			<only>UNITY</only>
+			<identifier>remap.Unity</identifier>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_1, ModifierFlag::OPTION_L,
+				KeyCode::KEY_1, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_1, ModifierFlag::OPTION_R,
+				KeyCode::KEY_1, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_2, ModifierFlag::OPTION_L,
+				KeyCode::KEY_3, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_2, ModifierFlag::OPTION_R,
+				KeyCode::KEY_2, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_3, ModifierFlag::OPTION_L,
+				KeyCode::KEY_3, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_3, ModifierFlag::OPTION_R,
+				KeyCode::KEY_3, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_4, ModifierFlag::OPTION_L,
+				KeyCode::KEY_4, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_4, ModifierFlag::OPTION_R,
+				KeyCode::KEY_4, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_5, ModifierFlag::OPTION_L,
+				KeyCode::KEY_5, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_5, ModifierFlag::OPTION_R,
+				KeyCode::KEY_5, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_6, ModifierFlag::OPTION_L,
+				KeyCode::KEY_6, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_6, ModifierFlag::OPTION_R,
+				KeyCode::KEY_6, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_7, ModifierFlag::OPTION_L,
+				KeyCode::KEY_7, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_7, ModifierFlag::OPTION_R,
+				KeyCode::KEY_7, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_8, ModifierFlag::OPTION_L,
+				KeyCode::KEY_8, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_8, ModifierFlag::OPTION_R,
+				KeyCode::KEY_8, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::OPTION_L,
+				KeyCode::KEY_9, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::OPTION_R,
+				KeyCode::KEY_9, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::OPTION_L,
+				KeyCode::KEY_9, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_9, ModifierFlag::OPTION_R,
+				KeyCode::KEY_9, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_0, ModifierFlag::OPTION_L,
+				KeyCode::KEY_0, ModifierFlag::COMMAND_L,
+			</autogen>
+			<autogen>
+				--KeyToKey--
+				KeyCode::KEY_0, ModifierFlag::OPTION_R,
+				KeyCode::KEY_0, ModifierFlag::COMMAND_L,
+			</autogen>
+		</item>
+
+		<item>
+			<only>TERMINAL</only>
+			<name>Leave Insert Mode with EISUU (vim keybind apps)</name>				
+			<identifier>private.vim_keybind_apps_esc_with_eisuu</identifier>
+			<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+			<autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+			<autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+			<autogen>--KeyToKey-- KeyCode::S, VK_COMMAND, KeyCode::S, VK_COMMAND, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+		</item>
+
+		<item>
+			<name>Command_L to Control_L (TERMINAL ONLY)</name>
+			<only>TERMINAL</only>
+			<identifier>remap.app_term_commandL2controlL2</identifier>
+			<autogen>--KeyToKey-- KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+		</item>
+
+		<item>
+			<name>Control_L to Command_L (TERMINAL ONLY)</name>
+			<only>TERMINAL</only>
+			<identifier>remap.app_term_contolL2commandL2</identifier>
+			<autogen>--KeyToKey-- KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>				 
+		</item>
+
+	</list>
 </root>
